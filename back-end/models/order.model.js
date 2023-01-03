@@ -24,7 +24,9 @@ const datasAndTypes = (DataTypes) => ({
 });
 
 const orderModel = (sequelize, DataTypes) => {
-  const Order = sequelize.define('Order', datasAndTypes(DataTypes));
+  const Order = sequelize.define('Order', datasAndTypes(DataTypes), {
+    tableName: 'orders',
+  });
 
   return Order;
 };
