@@ -2,9 +2,11 @@
   "name": "notas_fiscais--back-end",
   "version": "1.0.0",
   "description": "Teste recebido pela Cashforce",
-  "main": "index.js",
+  "main": "./src/api/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/api/server.js",
+    "nodemon": "nodemon ./src/api/server.js"
   },
   "keywords": [],
   "author": "",
